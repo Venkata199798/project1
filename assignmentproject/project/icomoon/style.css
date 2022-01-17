@@ -39,12 +39,12 @@ html{
   display: flex;
   justify-content: flex-end;
 }
-@media (max-width: 480px){
+/* @media (max-width: 480px){
   .menubar{
     padding: 20px;
     margin-right: 20px;
   }
-}
+} */
 .icon-facebook-svgrepo-com:before {
   content: "\e903";
 

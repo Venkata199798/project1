@@ -6,9 +6,73 @@ html{
     padding: 10px;
 }
 
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?sxpxlv');
+    src:  url('fonts/icomoon.eot?sxpxlv#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?sxpxlv') format('truetype'),
+      url('fonts/icomoon.woff?sxpxlv') format('woff'),
+      url('fonts/icomoon.svg?sxpxlv#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    /* speak: never; */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html{
+    padding: 10px;
+  }
+  .menubar::after{
+    content: "\e901";
+    color: #fff;
+    font-family: "icomoon";
+    font-size: 6rem;
+    margin-top: 1rem;
+  }
+  
+  .menubar{
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* @media (max-width: 480px){
+    .menubar{
+      padding: 20px;
+      margin-right: 20px;
+    }
+  } */
+  .icon-facebook-svgrepo-com:before {
+    content: "\e903";
+  
+  }
+  .icon-twitter-black-shape-svgrepo-com:before {
+    content: "\e906";
+  }
+  
+  .icon-instagram-seeklogocom:before {
+    content: "\e909";
+  }
+  
+  .icon-copyright-symbol-svgrepo-com:before {
+    content: "\e90a";
+  }
+  
+  
 .banner{
     background-image: linear-gradient(to right, #4839B7, #6ED0B5);
-    height: 704.79px;
+    min-height: 704.79px;
     margin-bottom: 8rem;
     
 }
@@ -38,8 +102,8 @@ html{
     font-weight: 700;
     color: white;
     font-size: 80px;
-    width: 625px;
-    height: 202px;
+    max-width: 625px;
+    max-height: 202px;
     margin-left: 5.938rem;
         
 }
@@ -60,17 +124,18 @@ html{
     margin-left: 7.506rem;
 }
 
-/* @media (min-width:320px) and (max-width: 425px){
+ @media (min-width:320px) and (max-width: 425px){
 
     .banner{
         
-        width: 100%;
+        min-width: 100%;
         
     }
     .main-heading{
         text-align: center;
-        font-size: 40px;
-        margin-left: 2px;
+        font-size: 24px;
+
+       
 
     }
     .button{
@@ -93,8 +158,13 @@ html{
         flex-direction: column;
         padding: 1rem;
     }
+    .photo{ 
+        margin-left: 7.506rem;
+        max-width: 100px;
+        max-height: 100px;
+    }
 
-} */
+} 
 
 
 
@@ -184,6 +254,8 @@ html{
     
     
 }
+
+
 
 
 
